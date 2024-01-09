@@ -1,7 +1,7 @@
 const { Thought, User, Reaction } = require('../models');
 const {Types} = require('mongoose');
 
-const ThoughtController = {
+module.exports = {
   async getAllThoughts(req, res) {
     try {
       const thoughts = await Thought.find({});
@@ -11,7 +11,6 @@ const ThoughtController = {
     }
   },
 
-  // Handler for the "get thought by ID" API endpoint
   async getThoughtsById(req, res) {
     try {
       const thought = await Thought.findOne({_id:req.params.thoughtId});
@@ -24,7 +23,7 @@ const ThoughtController = {
       res.status(500).json(err);
     }
   },
-  // Handler for the "create thought" API endpoint
+ 
   async createThought(req, res) {
     try {
       const thought = await Thought.create(req.body);
@@ -34,7 +33,6 @@ const ThoughtController = {
     }
   },
   
-  // Handler for the "delete thought" API endpoint
   async deleteThought(req,res) {
     try {
         const thought = await Thought.findByIdAndDelete({_id:req.params.thoughtId});
@@ -44,7 +42,6 @@ const ThoughtController = {
     }
   },
 
-  // Handler for the "update thought by ID" API endpoint
   async updateThoughtById(req, res) {
     try {
       const thought = await Thought.findByIdAndUpdate(req.params.thoughtId, req.body, {
@@ -60,7 +57,6 @@ const ThoughtController = {
     }
   },
 
-  // Handler for the "create reaction" API endpoint
   async createReaction(req, res) {
       try {
         const thought = await Thought.findOneAndUpdate(
@@ -74,7 +70,6 @@ const ThoughtController = {
     }
   },
 
-// Handler for the "delete reaction" API endpoint
   async deleteReaction(req, res) {
       try {
         const thought = await Thought.findOneAndUpdate(
@@ -90,5 +85,4 @@ const ThoughtController = {
   },
 
 };
-// Export ThoughtController
-module.exports = ThoughtController;
+// module.exports = ThoughtController;

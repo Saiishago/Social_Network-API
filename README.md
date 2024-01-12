@@ -24,6 +24,27 @@ In this challenge we had to build an API for a Social Network Web Application th
 Tested API Routes in Insomnia
 
 - GET
+*Users*
+![GET users](images/GET:user.png)
+
+*Thoughts*
+![GET thoughts](images/GET:thought.png)
+
+*single* *Thought*
+![single Thought](images/GET:single:thought.png)
+
 - POST
+*User*
+![POST user](images/POST:user.png)
+
 - PUT
+*User*
+![PUT user](images/PUT:user.png)
+
 - DELETE
+*User*
+![DELETE user](images/DELETE:user.png)
+
+
+### Author
+Salome Mphago [SalomeK](https://github.com/Saiishago/Social_Network-API)

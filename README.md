@@ -10,7 +10,7 @@ In this challenge we had to build an API for a Social Network Web Application th
 ## Links
 
 - [Github Repository](https://github.com/Saiishago/Social_Network-API)
-- [Walkthrough]()
+- [Walkthrough](https://drive.google.com/file/d/1_DftOUWAUdF0j6yRkJkGoK3u8Vj3ArY3/view?usp=sharing)
 
 ## Getting Started
 
